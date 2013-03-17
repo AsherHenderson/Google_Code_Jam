@@ -35,15 +35,15 @@ public class codejam {
 			
 			String[] possibleLetters = getPossibleLetters(thisCase);
 			
-			System.out.print("\nCase #"+(i+1));
+			/*System.out.print("\nCase #"+(i+1));
 			for(int x=0;x<possibleLetters.length;x++){
 				System.out.print("\n"+possibleLetters[x]);
-			}
+			}*/
 			
 			
-			//tempLibrary = removeNotStartingWith(tempLibrary,possibleLetters);
+			tempLibrary = removeNotStartingWith(tempLibrary,possibleLetters);
 			
-			//System.out.printf("Case #%d: %d\n",i+1,tempLibrary.length);
+			System.out.printf("Case #%d: %d\n",i+1,tempLibrary.length);
 			
 		}
 		
@@ -64,7 +64,7 @@ public class codejam {
 			
 		}
 		
-		String[] possibleLetters = new String[i-1];
+		String[] possibleLetters = new String[i];
 		
 		for(int k=0;k<possibleLetters.length;k++){
 			possibleLetters[k]=possibleLettersLong[k];
